@@ -11,7 +11,7 @@
     </title>
 
     <link rel="icon" href="/assets/images/icon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://www.dafontfree.net/embed/Y29yYmVsLWJvbGQmZGF0YS80Ni9jLzYzMDY2L0NvcmJlbCBCb2xkLnR0Zg" rel="stylesheet" type="text/css"/>
     <meta name="description" content="WE DO IT SO YOU DON'T HAVE TO."> <!-- ADD DESCRIPTION -->
 
@@ -24,13 +24,54 @@
 .body{
   margin:0;
   background-color:rgb(253, 204, 54);
+  max-width: 100% !important;
+  overflow-x: hidden;
+  padding:0;
 }
 .body1 {
   height:60vh;
 }
+#mainHeaderText {
+  font-size:120pt;
+  position:relative;
+}
+#footerHeaderText {
+  font-size:14pt;
+  position: relative;
+}
+#pickupText {
+  position: relative;
+  margin:0; 
+  padding:0; 
+  top:17.5vh;
+  font-size:16pt;
+}
+#instaIcon{
+  position: relative; 
+  bottom:2.4vh;
+  right: 6vh;
+}
+#facebookIcon {
+  position: relative; 
+  top:2.5vh; 
+  right:12vh;
+}
+#contactText {
+  position: relative; 
+  right:14vh; 
+  top:3.4vh;
+  font-size:14pt; 
+}
+#trademarkText {
+  position: absolute; 
+  left:6vh; 
+  top:93.2vh; 
+  margin:0; 
+  padding:0;
+}
 .footer {
   padding:20px;
-  margin:none;
+  margin:0;
   background-color:#fdcc36;
   margin-top:7%;
 }
@@ -73,6 +114,8 @@
   right: 7vh;
   top: 2vh;
   float:right;
+  margin:0;
+
 }
 a,a:visited, a:active {
   text-decoration: none;
@@ -92,8 +135,9 @@ a,a:visited, a:active {
     filter: invert(100%);
     transition: 0.5s;
 }
-</style>
 
+</style>
+<link rel="stylesheet" href="mobileCSS.css">
 </head>
 
 <body class="body">
@@ -114,29 +158,29 @@ a,a:visited, a:active {
 
     <div class="body1">     
         <div style="text-align: center;">
-            <h1 style="font-family: new-order, sans-serif; font-style: normal; font-weight: 700; margin-top:7%; margin-bottom:0; color:white; font-size: 120pt;">get rid.</h1>
-            <p style="font-family: 'corbel-bold', sans-serif; font-size: 14pt; position:relative; top:10px; color:white;">WE DO IT SO YOU DON'T HAVE TO.</p>
+            <h1 id="mainHeaderText" style="font-family: new-order, sans-serif; font-style: normal; font-weight: 700; margin-top:7%; margin-bottom:5%; color:white;">get rid.</h1>
+            <p id="footerHeaderText" style="font-family: 'corbel-bold', sans-serif; color:white;">WE DO IT SO YOU DON'T HAVE TO.</p>
         </div>
 
         <div style="text-align: center; color:white; text-decoration:none;">
-          <a href=""  style=" font-size:16pt; font-weight:650; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-decoration: underline; position: relative; margin:0; padding:0; top:17.5vh;" >   ARRANGE PICKUP NOW   </a>
+          <a href="" id="pickupText" style=" font-weight:650; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; text-decoration: underline; " >   ARRANGE PICKUP NOW   </a>
         </div>
     </div>
     
     <div class="footer">
       <div>
           <span style="float:right; margin:0; color:white; ">
-              <a href="#" style=" font-size:14pt; float:left; position: relative; right:8vh; font-family: 'corbel-bold', sans-serif; right:14vh; top:3.4vh;">contact us</a> <!-- ADD LINK-->
+              <a href="#" id= "contactText"style="float:left; font-family: 'corbel-bold', sans-serif;">contact us</a> <!-- ADD LINK-->
             <div id="edit-img" style="float:left;">
-              <a href="https://www.facebook.com/get-rid-106261278650366" target=”_blank”><img src="/assets/images/fb.png" alt= "facebook"style=" position: relative; top:2.5vh; right:12vh;" width=35px></a>
+              <a href="https://www.facebook.com/get-rid-106261278650366" id="facebookIcon" target=”_blank”><img src="/assets/images/fb.png" alt= "facebook" width=35px></a>
             </div>
              <div id="edit-img">
-              <a href="https://www.instagram.com/getridnz/" style="float:right;" target=”_blank”><img src="/assets/images/insta.png" alt="instagram" style=" position: relative; bottom:2.4vh; right: 6vh;"width=35px></a>
+              <a href="https://www.instagram.com/getridnz/" style="float:right;" target=”_blank”><img src="insta.png" alt="instagram" id="/assets/images/insta.png" width=35px></a>
             </div>
         </span>
       </div>
 
-        <p style="position: absolute; left:6vh; top:93.2vh; margin:0; padding:0; color:white; ">@getrid 2022 | All Rights Reserved</p>  
+        <p id= "trademarkText" style="color:white;" >@getrid 2022 | All Rights Reserved</p>  
     </div>
 
 

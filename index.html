@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 
 
+
 <html>
 
 <head>
-    
-    <!-- /assets/images/ (just for copy/paste) -->
-    
+
     <title>
         get rid.
     </title>
 
-    <link rel="icon" href="/assets/images/icon.png">
+    <link rel="icon" href="icon.png">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="description" content="WE DO IT SO YOU DON'T HAVE TO."> <!-- ADD DESCRIPTION -->
     <link rel="stylesheet" href="images.css">
@@ -24,9 +23,9 @@ html,body {
     padding: 0px;
     max-width: 100% !important;
     overflow-x: hidden;
+    background-color: #fdcc36;
 }     
  .header {
-  padding-top: 1vw;
   padding-left: 2vw;
   padding-right: 2vw;
   padding-bottom: 1.8vw;
@@ -46,7 +45,7 @@ html,body {
   background-color: rgb(255, 255, 255);
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 4.8vw;
+
 }
 .sidenav a {
   padding: 0.66vw 0.66vw 0.66vw 2.64vw;
@@ -57,7 +56,7 @@ html,body {
   float:right;
   position:relative;
   right:30px;
-  top:30px;
+  top:60px;
 }
 .sidenav .closebtn {
   position: absolute;
@@ -100,7 +99,7 @@ a:hover {
   flex: 1;
   display: inline-grid;
   grid-template-columns: 20vw 10vw 10vw;
-  grid-column-gap:0.3vw;
+  grid-column-gap:2vh;
   padding: 0vw;
   text-align: center;
   color:white;
@@ -157,23 +156,32 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   width: 30%;
-  min-width:380px;
+  min-width:353px;
   margin-bottom:10vh;
   margin-top:2vh;
 }
+
+@media screen and (min-width:415px) {
+  .center {
+    left:3vw;
+  }
+  
+}
+
+
 
 
 
     </style>
     </head>
-    <body class="body" style="margin:0;  background-color: #fdcc36;">
+    <body class="body" style="margin:0; ">
 
         <div class="header">
             
             <div id="mySidenav" class="sidenav" style="color:#fdcc36;">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a style="font-family: 'corbel-bold', sans-serif; " href="/pages/about-us.html">about us</a>          <!-- ADD LINKS HERE-->
-                <a style="font-family: 'corbel-bold', sans-serif; " href="/pages/services.html">services</a>
+                <a style="font-family: 'corbel-bold', sans-serif; " href="a/pages/boutUs.html">about us</a>          <!-- ADD LINKS HERE-->
+                <a style="font-family: 'corbel-bold', sans-serif; " href="/pages/pricing.html">pricing</a>
                 <a style="font-family: 'corbel-bold', sans-serif; "href="/pages/contactUs.html">contact us</a>
                 <a style="font-family: 'corbel-bold', sans-serif; " href="/pages/bookings.html">bookings</a>
               </div>
@@ -184,24 +192,24 @@ a:hover {
         <div class="body1">
         <div class="main">
               <!--  <h1 style="text-align: center; font-family:Rockwell; font-size: 120px; color:white;">get rid.</h1> -->
-           <img src="/assets/images/preview.jpeg" style="position:relative; "id="imageMain" class="center">
-            <p id="subText" >WE DO IT SO YOU DON'T HAVE TO.</p>
+            <img src="/images/BEN.jpg" style="position:relative;  "id="imageMain" class="center">
+           <!-- <p id="subText" >WE DO IT SO YOU DON'T HAVE TO.</p> -->
 
         </div>
 
           <div id="div2" style="text-align: center; color:white; text-decoration:none;">
             <a id="pickupText" style="font-weight:650; 
                 font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
-                text-decoration: underline; font-size:20px; " href="#">ARRANGE PICKUP NOW</a>
+                text-decoration: underline; font-size:20px; position: relative; bottom:4vh; " target=”_blank” href="https://www.calendly.com/getrid/arrange-collection-of-item-s">ARRANGE PICKUP NOW</a>
           </div>
          
          <!-- <div class="grid-container1"> -->
-              <div style="position: relative; top:40vh;">
+              <div style="position: relative; top:30vh;">
 
             <div class="grid-container" style="left:0.1vw;">
 
                 <div class="grid-item"  >
-                  <a href="/pages/contactUs.html" id="contactText" style=" float:right; position: relative; top:5px; font-size:20px;; font-family: 'corbel-bold', sans-serif;">contact us</a>
+                  <a href="/pages/contactUs.html" id="contactText" style="  float:right; position: relative; top:5px; font-size:20px;; font-family: 'corbel-bold', sans-serif;">contact us</a>
                 </div> <!-- ADD LINK-->
                 <div class="grid-item" id="edit-img" >
                   <a href="https://www.facebook.com/get-rid-106261278650366" id="facebookIcon"  target=”_blank”><img src="/assets/images/fb.png" width="35px" alt= "facebook" id="img"></a>
@@ -226,4 +234,3 @@ a:hover {
         </script>
     </body>
     </html>
-

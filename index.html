@@ -160,17 +160,26 @@ a:hover {
   margin-bottom:10vh;
   margin-top:2vh;
 }
-
 @media screen and (min-width:415px) {
   .center {
     left:3vw;
   }
-  
 }
-
-
-
-
+.downButton {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  font-size: 100px;
+  left:49.5%;
+  position: absolute;
+  color:white;
+  position: relative;
+  bottom:10vh;
+}
+.downButton:hover {
+ color:black;
+ transition: 0.5s ;
+}
 
     </style>
     </head>
@@ -209,7 +218,7 @@ a:hover {
             <div class="grid-container" style="left:0.1vw;">
 
                 <div class="grid-item"  >
-                  <a href="/pages/contactUs.html" id="contactText" style="  float:right; position: relative; top:5px; font-size:20px;; font-family: 'corbel-bold', sans-serif;">contact us</a>
+                <!--  <a href="/pages/contactUs.html" id="contactText" style="  float:right; position: relative; top:5px; font-size:20px;; font-family: 'corbel-bold', sans-serif;">contact us</a> -->
                 </div> <!-- ADD LINK-->
                 <div class="grid-item" id="edit-img" >
                   <a href="https://www.facebook.com/get-rid-106261278650366" id="facebookIcon"  target=”_blank”><img src="/assets/images/fb.png" width="35px" alt= "facebook" id="img"></a>
@@ -222,6 +231,14 @@ a:hover {
             </div>
           </div>
         <!--  </div> -->
+        
+        <button class="downButton">	
+            &#812;</button>
+
+
+          <div style="background-color: white; margin-bottom:0; padding-bottom: 0;">
+           hrllo  
+          </div>
         <script>
 
         function openNav() {

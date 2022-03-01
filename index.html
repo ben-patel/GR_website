@@ -58,6 +58,7 @@ html,body {
   position:relative;
   right:30px;
   top:60px;
+ 
 }
 .sidenav .closebtn {
   position: absolute;
@@ -101,15 +102,13 @@ a:hover {
   display: inline-grid;
   grid-template-columns: 20vw 10vw 10vw;
   grid-column-gap:2vh;
-  padding: 0vw;
+  padding: 0;
   text-align: center;
   color:white;
   display: flex;
   justify-content: center;
   position: relative;
-  right:2.5vw;
-  bottom:10vh;
- 
+  right:1vw;
 }
 .grid-item >div{
   font-size: 30px;
@@ -154,29 +153,25 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
   width: 30%;
-  min-width:353px;
+  min-width:350px;
   margin-bottom:10vh;
   top:2vh;
 }
-@media screen and (min-width:415px) {
-  .center {
-    left:3vw;
-  }
-}
-@media screen and (max-width:335px) {
-  .center {
-    width:10px;
-  }
-}
 .downButton {
   position: relative;
-  left:47vw;
-  top:7%;
+  left:48%;
+  top:15%;
   background-color: transparent;
   color:white;
   font-size: 80px;
   width:50px;
   height:50px;
+  border:none;
+}
+@media screen and (max-width: 767px) {
+    .downButton {
+        left:45% !important;
+    }
 }
 #downArrow {
   width:100%;
@@ -188,44 +183,34 @@ a:hover {
   margin-bottom:0; 
   padding-bottom: 0;
   position: relative;
-  
 }
+@media screen and (max-width: 360px) {
+    .center{
+      top:3vh;
+      
+      right:1.5vh;
+    }
+}
+@media screen and (max-width:600px){
 
+  #yellowt {
+    font-size: 3.5vh !important;
+  }
+}
+@media screen and (max-width:400px){
+
+#yellowt {
+  font-size: 3vh !important;
+}
+}
     </style>
     </head>
     <body class="body" style="margin:0; ">
 
         <div class="header" >
-            
-            <div id="mySidenav" class="sidenav" style="color:#fdcc36; ">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a style="font-family: 'corbel-bold', sans-serif; " href="/pages/about-us.html">about us</a>          <!-- ADD LINKS HERE-->
-                <a style="font-family: 'corbel-bold', sans-serif; " href="/pages/pricing.html">pricing</a>
-                <a style="font-family: 'corbel-bold', sans-serif; "href="/pages/contactUs.html">contact us</a>
-                <a style="font-family: 'corbel-bold', sans-serif; " href="/pages/bookings.html">bookings</a>
-              </div>
-                <div style="color:white;" >
-                  <span style="font-size:60px; cursor:pointer; float:right; background-color: #fdcc36;" onclick="openNav()">&#9776;</span>
-                </div>
-        </div>
-        <div class="body1" style="background-color: #fdcc36; box-shadow: 0 4px 2px -2px gray; height:40%">
-        <div class="main">
-              <!--  <h1 style="text-align: center; font-family:Rockwell; font-size: 120px; color:white;">get rid.</h1> -->
-            <img src="/assets/images/BEN.jpg" style="position:relative;  "id="imageMain" class="center">
-           <!-- <p id="subText" >WE DO IT SO YOU DON'T HAVE TO.</p> -->
+          <div style="position: relative; top:3vh; margin:0;">
 
-        </div>
-
-          <div id="div2" style="text-align: center; color:white; text-decoration:none;">
-            <a id="pickupText" style="font-weight:650; 
-                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
-                text-decoration: underline; font-size:20px; position: relative; bottom:18vh; " target=”_blank” href="https://www.calendly.com/getrid/arrange-collection-of-item-s">ARRANGE PICKUP NOW</a>
-          </div>
-         
-         <!-- <div class="grid-container1"> -->
-             <div style="position: relative; top:10vh;">
-
-            <div class="grid-container" style="right:0.7vw;">
+            <div class="grid-container" style="float:left; position: relative; top:1vh;">
 
                 <div class="grid-item"  >
                  <!-- <a href="#" id="contactText" style="  float:right; position: relative; top:5px; font-size:20px;; font-family: 'corbel-bold', sans-serif;">contact us</a> -->
@@ -239,9 +224,37 @@ a:hover {
               
             </div>
             </div>
-            <button class="downButton" onclick="scrollWin(0,window.innerHeight/1.22)"><img id="downArrow" src="/assets/images/downarrow.png"></button>
+            <div id="mySidenav" class="sidenav" style="color:#fdcc36; ">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <a style="font-family: 'corbel-bold', sans-serif; " href="/pages/about-us.html">about us</a>          <!-- ADD LINKS HERE-->
+                <a style="font-family: 'corbel-bold', sans-serif; " href="/pages/pricing.html">pricing</a>
+                <a style="font-family: 'corbel-bold', sans-serif; "href="/pages/contactUs.html">contact us</a>
+                <a style="font-family: 'corbel-bold', sans-serif; " href="/pages/bookings.html">bookings</a>
+              </div>
+                <div style="color:white;" >
+                  <span style="font-size:60px; cursor:pointer; float:right; position: relative; top:1.45vh; margin-left:3vw; background-color: #fdcc36;" onclick="openNav()">&#9776;</span>
+                </div>
+        </div>
+        <div class="body1" style="background-color: #fdcc36; box-shadow: 0 4px 2px -2px gray; height:49%">
+        <div class="main">
+              <!--  <h1 style="text-align: center; font-family:Rockwell; font-size: 120px; color:white;">get rid.</h1> -->
+            <img src="/assets/images/BEN.jpg" style="position:relative;  "id="imageMain" class="center">
+           <!-- <p id="subText" >WE DO IT SO YOU DON'T HAVE TO.</p> -->
+
+        </div>
+
+          <div id="div2" style="text-align: center; color:white; text-decoration:none;">
+            <a id="pickupText" style="font-weight:650;
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+                text-decoration: underline; font-size:20px; position: relative; bottom:10vh; " target=”_blank” href="https://www.calendly.com/getrid/arrange-collection-of-item-s">ARRANGE PICKUP NOW</a>
+          </div>
+         
+         <!-- <div class="grid-container1"> -->
+             
+            <button class="downButton" id="img" onclick="scrollWin(0,1000)"><img id="downArrow" src="/assets/images/downarrow.png" id="buttonD"></button>
           </div> <div class="white">
-            <h1 style="background-color: white; color:#fdcc36; font-weight: 400; position:relative; font-size:30px; text-align: center; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">email us:</h1> 
+            <h1 id="yellowt" style="background-color: white; color:#fdcc36; font-weight: 600; position:relative; font-size:5vh; text-align: center; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">got a question?</h1> 
+            <h1 id="yellowt" style="background-color: white; color:#fdcc36; font-weight: 600; position:relative; font-size:5vh; text-align: center; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">get in touch with us now.</h1> 
            </div>
 
           
@@ -261,7 +274,6 @@ a:hover {
 
         function scrollWin(x,y) {
           window.scrollTo(x,y);
-          transi
         }
         </script>
     </body>

@@ -265,6 +265,17 @@ a:hover {
 #pic {
   height:30%;
 }
+#desc {
+  position: relative;
+  text-align: center;
+  color:white;
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  font-size:22px;
+  bottom:5vw;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 @media screen and (max-width:330px) {
 
   #pic {

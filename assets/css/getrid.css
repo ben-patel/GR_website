@@ -262,3 +262,12 @@ a:hover {
   -ms-transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
 }
+#pic {
+  height:30%;
+}
+@media screen and (max-width:330px) {
+
+  #pic {
+    height:250px !important;
+  }
+}

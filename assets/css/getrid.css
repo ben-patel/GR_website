@@ -32,7 +32,7 @@ html,body {
 }
 .sidenav a {
   padding: 0.66vw 0.66vw 0.66vw 2.64vw;
-  font-size: 3.6vh;
+  font-size: 25px;
   color: #fdcc36;
   display: block;
   transition: 0.3s;
@@ -40,7 +40,13 @@ html,body {
   position:relative;
   right:30px;
   top:60px;
- 
+  margin-left:30px;
+}
+@media screen and (min-width:1220px) {
+  .sidenav a {
+    font-size: 25px;
+    margin-left:0px;
+  }
 }
 .sidenav .closebtn {
   position: absolute;

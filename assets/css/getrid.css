@@ -151,7 +151,7 @@ a:hover {
 #downArrow {
   width:100%;
   position: relative;
-  bottom:35px;
+  bottom:10vh;
 }
 #downArrow:hover{
   -webkit-filter: invert(100%) !important;

@@ -268,7 +268,16 @@ a:hover {
   -webkit-transform: translate(-50%, 0);
 }
 #pic {
-  height:30%;
+  height:320px;
+  
+}
+@media screen and (max-width:520px) {
+
+  #pic {
+    height:221px !important;
+    left:4.5vh;
+    position: relative;
+  }
 }
 #desc {
   position: relative;
@@ -281,9 +290,4 @@ a:hover {
   margin-left: 10px;
   margin-right: 10px;
 }
-@media screen and (max-width:330px) {
 
-  #pic {
-    height:250px !important;
-  }
-}

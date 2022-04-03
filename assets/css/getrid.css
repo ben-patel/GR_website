@@ -178,6 +178,12 @@ position: relative;
     right:1.5vh;
   }
 } */
+@media screen and (max-width:600px) {
+
+  #block1 {
+    clear:both;
+  }
+}
 @media screen and (max-width:600px){
 
 #yellowt {
@@ -351,11 +357,12 @@ text-decoration:underline;
 
 #pic {
   height:80px !important;
-  top:10vh;
+  top:6vh;
   position: relative;
   margin-bottom : 15vh;
-  right:20px;
-
+  padding:none;
+  margin-right: none;
+  margin-left: none;
 }
 
 #desc {

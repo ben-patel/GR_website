@@ -302,6 +302,51 @@ text-decoration:underline;
 
 }
 
+#box {
+  height:0px;
+  position: relative;
+  position-left:10vw;
+}
+
+#hand { 
+  position: relative;
+  height:0px;
+  margin-left:3vw;
+
+}
+
+#truck {
+  position: relative;
+  height:0px;
+  margin-left:34vw;
+  bottom:1vw;
+}
+
+@media screen and (min-width:1200px) {
+  #box {
+    height:125px;
+    position: relative;
+    float:left;
+    left:14vw;
+  }
+  
+  #hand { 
+    position: relative;
+    height:125px;
+    float:inline;
+    left: 15vw;
+  }
+  
+  #truck {
+    position: relative;
+    float:right;
+    height:125px;
+    right:25vw;
+    
+  }
+
+}
+
 @media screen and (max-width:520px) {
 
 #pic {

@@ -5,6 +5,7 @@ html,body {
   padding: 0px;
   max-width: 100% !important;
   scroll-behavior: smooth;
+  background-color: #f9f9f9;
 }     
 .header {
 padding-left: 2vw;
@@ -132,6 +133,7 @@ height:80%;
 #contax {
 position: relative;
 }
+
 /*
 .center {
 display: block;
@@ -166,7 +168,7 @@ transition: 0.5s;
 }
 
 .white {
-background-color: white; 
+background-color: #f9f9f9; 
 margin-bottom:0; 
 padding-bottom: 0;
 position: relative;
@@ -178,6 +180,7 @@ position: relative;
     right:1.5vh;
   }
 } */
+
 @media screen and (max-width:600px) {
 
   #block1 {
@@ -190,6 +193,7 @@ position: relative;
   font-size: 3.5vh !important;
   margin-left: 1vh;
   margin-right: 1vh;
+  background-color: #f9f9f9;
 }
 }
 @media screen and (max-width:400px){
@@ -263,6 +267,72 @@ color:black;
 transition: 0.5s;
 }
 
+#overll {
+  text-align: right;
+}
+#phones {
+  position: relative;
+  width: 40vw;
+  margin-left:10vw;
+  margin:5vw;
+  
+}
+#WWC {
+  position: relative; 
+  top:24vw;
+  padding:none;
+  margin-left:15vw;
+  margin-right:10vw;
+  text-align: center;
+
+  float:left;
+ 
+}
+#wwcb {
+  font-size: 1vw;
+  width:24vw;
+  height:5vw;
+  padding:none;
+  margin:none;
+  border:none;
+  background-color: gainsboro;
+  color:#f9f9f9;
+  border-radius:0.8vw;
+}
+#wwcb:hover {
+  background-color: gray;
+  transition: 0.5s;
+  cursor:pointer;
+}
+
+@media screen and (max-width:1200px) {
+
+
+  #wwcb {
+    width:20vh;
+    height:4vh;
+    font-size: 1vh;
+  }
+
+  #phones {
+    top:6.5vh;
+    float:none;
+  }
+  #WWC {
+    top:4vh;
+    float:none;
+    right:1vh;
+    left:none;
+  }
+  #overll {
+    text-align: center;
+  }
+  #moblue {
+    text-align: center;
+  }
+}
+
+
 #centerIMG{
 position: relative;
 left: 50%;
@@ -328,7 +398,7 @@ text-decoration:underline;
   bottom:1vw;
 }
 
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1337px) {
   #box {
     height:125px;
     position: relative;
@@ -352,7 +422,6 @@ text-decoration:underline;
   }
 
 }
-
 @media screen and (max-width:520px) {
 
 #pic {
@@ -363,6 +432,7 @@ text-decoration:underline;
   padding:none;
   margin-right: none;
   margin-left: none;
+   
 }
 
 #desc {
@@ -379,7 +449,7 @@ text-decoration:underline;
   top:4vh;
 }
 
-#yellowt {
-  font-size: 3vh;
+#social {
+  top:2
 }
 }

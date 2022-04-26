@@ -42,35 +42,34 @@ html,body {
   right: 0;
   background-color: rgb(255, 255, 255);
   overflow-x: hidden;
-  transition: 0.8s;
-  
+  transition: 0.5s;
+  padding-top: 4.8vw;
 }
 .sidenav a {
   padding: 0.66vw 0.66vw 0.66vw 2.64vw;
-  font-size: 25px;
+  font-size: 30px;
   color: #fdcc36;
   display: block;
   transition: 0.3s;
   float:right;
   position:relative;
   right:30px;
-  top:60px;
-  margin-left:30px;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  left:0vw;
-  right:40px;
-  font-size: 40px;
-  margin-right: 24vw;
+  top:10px;
+  margin-left: 30px;
 }
 @media screen and (min-width:1220px) {
   .sidenav a {
     font-size: 25px;
     margin-left:0px;
   }
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  left:0vw;
+  right:400px;
+  font-size: 40px;
+  margin-right: 24vw;
 }
 #getrid {
     color:white;
@@ -137,11 +136,11 @@ a:hover {
 #text {
   position: relative;
   text-align: left;
-  color:white;
+  color:gray;
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-size: 20px;
-  font-weight: 300;
-  top:10vh;
+  font-weight: 400;
+  top:11vh;
   margin-left:10vw;
   margin-right:10vw;
   margin-bottom:0;
@@ -152,26 +151,48 @@ a:hover {
 #title {
   position: relative;
   text-align: left;
-  color:white;
+  color:gray;
   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
-  top:10vh;
+  top:11vh;
   margin-left:10vw;
   margin-right:10vw;
   margin-bottom:0;
   margin-top: 0;
   
 }
-@media screen and (max-width:500px) {
-  #text {
-    font-weight: 350 !important;
-    font-size :16px;
-  }
+#whatwepic {
+  position: relative;
+  text-align: center;
+  top:4vw;
+  left:2.5vw;
+  margin-bottom: 20vh;
+}
 
-  .body1 {
+#pic1 {
+  width:30vw;
+}
+
+@media screen and (max-width:1280px) {
+  #whatwepic {
     position: relative;
-    top:100px;
+    left:0;
+    float:none;
+    top:10vh;
   }
+  #pic1  {
+    width:30vw;
+  }
+  
+}
+
+@media screen and (max-width:800px) {
+  #pic1 {
+    width:25vh;
+    position: relative;
+    right:1vh;
+  }
+  
 }
 
 </style>
@@ -185,13 +206,13 @@ a:hover {
         <a href="https://getrid.co.nz/" style="font-size:20px; font-weight:500; margin:0; padding:0; position:relative; top:30px; left:10px; float:left; font-family: 'corbel-bold', sans-serif;">   return &#9166; </a>
             
         <div id="mySidenav" class="sidenav" style="color:#fdcc36;">
-                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                 <a style="font-family: 'corbel-bold', sans-serif; " href="/pages/about-us.html">about us</a> 
-                 <a style="font-family: 'corbel-bold', sans-serif; " href="/pages/ourStory.html">our story</a> 
- <!--   <a style="font-family: 'corbel-bold', sans-serif; " href="/pages/charity.html">charity</a>  !-->
-                 <a style="font-family: 'corbel-bold', sans-serif; " href="/pages/whatWeCollect.html">what we collect</a> 
-                 <a style="font-family: 'corbel-bold', sans-serif; " href="/pages/pricing.html">pricing</a>
-                 <a style="font-family: 'corbel-bold', sans-serif; "href="/pages/contactUs.html">contact us</a>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a style="font-family: 'corbel-bold', sans-serif; " href="/pages/about-us.html">about us</a> 
+          <a style="font-family: 'corbel-bold', sans-serif; " href="/pages/ourStory.html">our story</a> 
+        <!--  <a style="font-family: 'corbel-bold', sans-serif; " href="charity.html">charity</a>  !-->
+          <a style="font-family: 'corbel-bold', sans-serif; " href="/pages/whatWeCollect.html">what we collect</a> 
+          <a style="font-family: 'corbel-bold', sans-serif; " href="/pages/pricing.html">pricing</a>
+          <a style="font-family: 'corbel-bold', sans-serif; "href="/pages/contactUs.html">contact us</a>
         </div>
             
         <div style="color:white;">
@@ -199,7 +220,13 @@ a:hover {
         </div>
 
     </div>
+    <div id="whatwepic" > 
+      <img src = "/assets/images/wwc.JPEG" id="pic1">
+    </div>
+    <div style="background-color: white; ">
 
+      <br>
+      <div style="position: relative; bottom:8vh;">
     <div id="title">
       <h1>what we collect:</h1>
     </div>
@@ -241,12 +268,14 @@ a:hover {
       </p>
         
     </div>
-       
+    
+      </div>
+ 
     <div class="body1">
          
         <!-- <div class="grid-container1"> -->
       <div style="position: relative; top:200px; margin-bottom: 100px !important;">
-          <div class="grid-container">
+          <div class="grid-container" style="position:relative; bottom:2.2vh;">
 
             <div class="grid-item" id="edit-img" >
                 <a href="https://www.facebook.com/get-rid-106261278650366" id="facebookIcon"  target=”_blank”><img src="/assets/images/fb.png" width="35px" alt= "facebook" id="img"></a>
@@ -257,6 +286,9 @@ a:hover {
               
           </div>
       </div>
+      </div>
+      <br>
+  
     </div>
         <!--  </div> -->
     
